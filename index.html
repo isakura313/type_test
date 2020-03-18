@@ -9,6 +9,30 @@
     <script src="code.js" async></script>
 </head>
 <body>
+    <div style="display: flex; justify-content: center; ">
+    <div class="play" >
+        <form id="time">
+            <div class="wrap">
+
+                <div>Время:</div>
+                <div style="display: flex; flex-direction: row; align-items: center; background-color: white; width: 200px; height: 30px;">
+                    <div id="times" style="margin-left: 75px">0</div>
+                    <div style="margin-left: 5px;">Sec</div>
+                </div>
+            </div>
+        </form>
+        <div id="del" class="menu">
+            <div >
+                <p>Введите количество</p>   
+            </div>
+            <div >
+                <input type="text" id="input" style="width: 150px;" onkeyup="return pr(this);" onchange="return pr(this);">
+                <button onclick="play()">Начать игру</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
     <div id="root" class="flex center ten">
 
     </div>
